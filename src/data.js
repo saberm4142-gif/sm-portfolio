@@ -1,0 +1,68 @@
+// ============ EDIT HERE: all site content lives in this file ============
+export const CONTACT = { uae: '+971565750533', uaeShow: '+971 56 575 0533', sudan: '+249121947376', sudanShow: '+249 121 947 376', email: 'sabermustafa@hotmail.com' }
+const I = (f) => `./assets/img/${f}.webp`
+
+// Add a project: copy one block, add images in public/assets/img, done.
+// kind: 'render' | 'drawing' | 'interior'
+export const projects = [
+  { id: 'dark-timber', cat: 'residential', year: '', location: '',
+    title: { en: 'Contemporary Residential Block — Timber & Light', ar: 'مبنى سكني معاصر — خشب وإضاءة' },
+    role: { en: 'Architectural & facade design, 3D visualization', ar: 'التصميم المعماري والواجهات والتصور ثلاثي الأبعاد' },
+    short: { en: 'Multi-storey apartments with dark timber cladding, stone feature columns and glazed balconies.', ar: 'مبنى شقق متعدد الطوابق بكسوة خشبية داكنة وأعمدة حجرية وشرفات زجاجية.' },
+    overview: { en: 'A residential building designed so every apartment has a balcony and natural light, while the facade stays calm and elegant from the street.', ar: 'مبنى سكني صُمّم ليحصل كل مسكن على شرفة وإضاءة طبيعية، مع واجهة هادئة وأنيقة من جهة الشارع.' },
+    approach: { en: 'Layered balconies create shade and depth; warm timber tones contrast with white planes and soft cove lighting.', ar: 'تشكّل الشرفات المتدرجة ظلالاً وعمقاً، وتتباين درجات الخشب الدافئة مع الأسطح البيضاء والإضاءة المخفية.' },
+    technical: ['Architectural Design', '3D Visualization', 'Facade Design'],
+    images: [I('hero'), I('showcase')], drawings: [] },
+  { id: 'black-white', cat: 'residential', year: '', location: '',
+    title: { en: 'Residential Building — Black & White Composition', ar: 'مبنى سكني — تكوين أبيض وأسود' },
+    role: { en: 'Architectural design & visualization', ar: 'التصميم المعماري والتصور' },
+    short: { en: 'Crisp white volumes framed by black frames, with a lit ground-floor entrance.', ar: 'كتل بيضاء نقية بإطارات سوداء مع مدخل مضيء في الطابق الأرضي.' },
+    overview: { en: 'A clean, rhythmic facade where framed windows and balconies give the building a strong, readable identity.', ar: 'واجهة نظيفة ذات إيقاع واضح، تمنح النوافذ والشرفات المؤطرة المبنى هوية قوية.' },
+    approach: { en: 'Strong contrast and repeated modules keep the design simple to build and easy to read.', ar: 'التباين القوي والوحدات المتكررة يجعلان التصميم بسيطاً في التنفيذ وواضحاً بصرياً.' },
+    technical: ['Architectural Design', '3D Visualization'],
+    images: [I('blackwhite')], drawings: [] },
+  { id: 'curved-balconies', cat: 'residential', year: '', location: '',
+    title: { en: 'Curved-Balcony Residential Building', ar: 'مبنى سكني بشرفات منحنية' },
+    role: { en: 'Architectural design & elevation design', ar: 'التصميم المعماري وتصميم الواجهات' },
+    short: { en: 'Soft rounded balconies against graphite panels and a natural stone column.', ar: 'شرفات منحنية ناعمة أمام ألواح رمادية داكنة وعمود من الحجر الطبيعي.' },
+    overview: { en: 'A multi-storey modern house whose flowing balcony edges soften a strong, structured facade.', ar: 'منزل حديث متعدد الطوابق تلطّف حواف شرفاته المنحنية واجهته المنظمة.' },
+    approach: { en: 'Curves for comfort and shade, stone texture for warmth, and warm lighting for evening presence.', ar: 'منحنيات للراحة والتظليل، وملمس الحجر للدفء، وإضاءة دافئة لحضور مسائي.' },
+    technical: ['Architectural Design', 'Elevation Design', '3D Visualization'],
+    images: [I('curved'), I('curved-poster')], drawings: [] },
+  { id: 'villa', cat: 'residential', year: '', location: '',
+    title: { en: 'Private Villa — Screened Facade', ar: 'فيلا خاصة — واجهة بمشربيات' },
+    role: { en: 'Architectural & landscape visualization', ar: 'التصميم المعماري وتصور المناظر الطبيعية' },
+    short: { en: 'Modern villa with timber and carved screens, balconies and landscaped frontage.', ar: 'فيلا حديثة بعناصر خشبية وحجب مزخرفة وشرفات وواجهة مزروعة.' },
+    overview: { en: 'A family villa where decorative screens give privacy and shade without closing the home off from light.', ar: 'فيلا عائلية توفّر فيها الحجب الزخرفية الخصوصية والظل دون حجب الضوء.' },
+    approach: { en: 'Interior, exterior and garden are planned together so the villa feels like one continuous design.', ar: 'تُخطَّط المساحات الداخلية والخارجية والحديقة معاً لتبدو الفيلا تصميماً متصلاً.' },
+    technical: ['Architectural Design', 'Interior Design', 'Landscape', '3D Visualization'],
+    images: [I('villa-poster')], drawings: [] },
+  { id: 'nile-barbershop', cat: 'interior', year: '', location: '',
+    title: { en: 'Nile Barbershop — Luxury Interior (30 sqm)', ar: 'صالون النيل — تصميم داخلي فاخر (30 م²)' },
+    role: { en: 'Interior design, space planning, technical drawings', ar: 'التصميم الداخلي وتوزيع الفراغات والرسومات الفنية' },
+    short: { en: 'A 6 m × 5 m barber shop mixing modern industrial style with warm walnut and backlit mirrors.', ar: 'صالون حلاقة 6×5 م يجمع بين الطابع الصناعي الحديث والخشب الجوزي والمرايا المضاءة.' },
+    overview: { en: 'Three integrated barber stations, a reception zone and a leather lounge are arranged so staff and clients move smoothly.', ar: 'ثلاث محطات حلاقة متكاملة ومنطقة استقبال وصالة جلوس جلدية موزعة لتسهيل حركة الفريق والزبائن.' },
+    approach: { en: 'Dark walnut veneer, graphite walls and beige porcelain flooring, lifted by cove and backlit mirror lighting.', ar: 'قشرة جوز داكنة وجدران رمادية وأرضية بورسلان بيج، تتألق بالإضاءة المخفية وإضاءة المرايا.' },
+    technical: ['Space Planning', 'Interior Design', 'Technical Drawings', 'Lighting Design'],
+    images: [I('barber-board'), I('barber-exploded')], drawings: [] },
+  { id: 'drawings', cat: 'technical', year: '', location: '',
+    title: { en: 'AutoCAD & Shop Drawings', ar: 'رسومات أوتوكاد والرسومات التنفيذية' },
+    role: { en: 'Technical drawing', ar: 'الرسم الفني' },
+    short: { en: 'Villa floor plan with kitchen and wardrobe shop drawings.', ar: 'مسقط فيلا مع رسومات تنفيذية للمطبخ وخزائن الملابس.' },
+    overview: { en: 'Detailed drawings that show the contractor exactly how the design should be built and installed.', ar: 'رسومات تفصيلية توضح للمقاول كيفية تنفيذ التصميم وتركيبه بدقة.' },
+    approach: { en: 'Dimensioned plans and joinery details prepared to be read on site.', ar: 'مساقط وتفاصيل نجارة مؤشَّرة الأبعاد مجهزة للقراءة في الموقع.' },
+    technical: ['Shop Drawings', '2D Drawings', 'Residential Villa Plan'],
+    images: [], drawings: [I('drawings')] },
+]
+export const categories = ['all', 'residential', 'interior', 'technical']
+
+export const services = [
+  { k: 'arch', icon: '◇', en: ['Architectural Design', 'Buildings and facades planned to be beautiful, comfortable and buildable.'], ar: ['التصميم المعماري', 'مبانٍ وواجهات مخططة لتكون جميلة ومريحة وقابلة للتنفيذ.'] },
+  { k: 'int', icon: '▭', en: ['Interior Design', 'Refined interiors balancing aesthetics, circulation, materials and execution.'], ar: ['التصميم الداخلي', 'فراغات داخلية راقية توازن بين الجمال والحركة والخامات والتنفيذ.'] },
+  { k: 'viz', icon: '◉', en: ['3D Visualization', 'Realistic images so you can see your project before it is built.'], ar: ['التصور ثلاثي الأبعاد', 'صور واقعية لترى مشروعك قبل بنائه.'] },
+  { k: 'shop', icon: '▤', en: ['2D & Shop Drawings', 'Detailed drawings showing the contractor exactly how to build and install.'], ar: ['الرسومات التنفيذية', 'رسومات تفصيلية توضح للمقاول كيفية التنفيذ والتركيب.'], tech: { en: 'Technical: detailed drawings for fabrication and site installation.', ar: 'تقنياً: رسومات تفصيلية للتصنيع والتركيب في الموقع.' } },
+  { k: 'fit', icon: '▣', en: ['Fit-Out & Execution', 'Turning approved designs into finished spaces on site.'], ar: ['التشطيب والتنفيذ', 'تحويل التصاميم المعتمدة إلى فراغات منفذة في الموقع.'] },
+  { k: 'pm', icon: '◫', en: ['Project Management', 'Coordinating people, time and quality from concept to handover.'], ar: ['إدارة المشاريع', 'تنسيق الفريق والوقت والجودة من الفكرة حتى التسليم.'] },
+  { k: 'qa', icon: '✓', en: ['QA/QC & Site Supervision', 'Checking work on site so what is built matches what was designed.'], ar: ['ضمان ومراقبة الجودة والإشراف', 'متابعة العمل في الموقع ليطابق المنفّذ ما صُمّم.'], tech: { en: 'Technical: quality assurance / quality control and supervision of works.', ar: 'تقنياً: ضمان ومراقبة الجودة والإشراف على الأعمال.' } },
+  { k: 'land', icon: '❦', en: ['Landscape Design', 'Gardens, pools and outdoor living designed with the building.'], ar: ['تصميم المناظر الطبيعية', 'حدائق ومسابح ومساحات خارجية مصممة مع المبنى.'] },
+]
