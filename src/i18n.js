@@ -1,6 +1,6 @@
 export const ui = {
   en: { dir: 'ltr', name: 'Eng. Saber Mustafa Ahmed', docTitle: 'Eng. Saber Mustafa Ahmed | Architectural & Interior Designer',
-    nav: ['Home','About','Services','Projects','Experience','Partners','Contact'], role: 'Architectural & Interior Design', tag: 'Design • Plan • Execute',
+    nav: ['Home','About','Services','Projects','Experience','Contact'], role: 'Architectural & Interior Design', tag: 'Design • Plan • Execute',
     stmt: 'Transforming architectural vision into precise, functional and timeless spaces.', view: 'View projects', talk: "Let's talk", featured: 'Featured project', thumbs: 'Choose a featured project', arrow: '→', logoAlt: 'SM logo — Eng. Saber Mustafa Ahmed',
     aboutT: 'Who is Saber Mustafa?', aboutS: 'An architect and interior designer with 15+ years of experience who takes a project from first idea to finished building.',
     simple: 'In simple words', simpleT: 'He designs your home, office or shop, shows you how it will look, draws the exact details builders need, and checks the work on site.',
@@ -11,11 +11,10 @@ export const ui = {
     over: 'Overview', appr: 'Design approach', scope: 'Technical scope', role2: 'Role', facts: 'Key facts', drw: 'Drawings & presentation boards', imgs: 'Images', zoomHint: 'Click an image to enlarge. Use + / − to zoom and scroll to inspect.', open: 'View details',
     expT: 'Experience', exp: [['15+','Years in architectural & interior design'],['Design','Concept, 3D visualization, space planning'],['Plan','Technical & shop drawings, coordination'],['Execute','Fit-out, QA/QC and site supervision']],
     toolsT: 'Software', tools: 'AutoCAD • 3ds Max • ArchiCAD • Lumion • Photoshop',
-    partT: 'Partners in Design & Development', partP: 'Two professionals sharing expertise to deliver complete design and development services.', p1: 'Eng. Saber Mustafa Ahmed', p2: 'Arch. Mawathig Arabi', p2s: 'Design & Development Partner',
     conT: "Let's discuss your next project.", conP: 'Tell us what you want to build or renovate, and we will reply with clear next steps.', call: 'Call', mail: 'Email', mailL: 'Email', wa: 'WhatsApp', uae: 'UAE', sudan: 'Sudan', close: 'Close', rights: 'All rights reserved.',
     metaDesc: 'Professional architectural and interior design portfolio showcasing architectural design, interior design, technical drawings, 3D visualization, fit-out, project coordination and site supervision.' },
   ar: { dir: 'rtl', name: 'م. صابر مصطفى أحمد', docTitle: 'م. صابر مصطفى أحمد | مصمم معماري وداخلي',
-    nav: ['الرئيسية','نبذة','الخدمات','المشاريع','الخبرة','الشركاء','تواصل'], role: 'التصميم المعماري والداخلي', tag: 'صمّم • خطّط • نفّذ',
+    nav: ['الرئيسية','نبذة','الخدمات','المشاريع','الخبرة','تواصل'], role: 'التصميم المعماري والداخلي', tag: 'صمّم • خطّط • نفّذ',
     stmt: 'نحوّل الرؤية المعمارية إلى فراغات دقيقة وعملية وخالدة.', view: 'استعرض المشاريع', talk: 'تواصل معنا', featured: 'مشروع مميّز', thumbs: 'اختر مشروعاً مميزاً', arrow: '←', logoAlt: 'شعار SM — م. صابر مصطفى أحمد',
     aboutT: 'من هو صابر مصطفى؟', aboutS: 'مهندس معماري ومصمم داخلي بخبرة تتجاوز 15 عاماً، يقود المشروع من الفكرة الأولى حتى التنفيذ.',
     simple: 'بعبارات بسيطة', simpleT: 'يصمم منزلك أو مكتبك أو محلك، ويُريك شكله النهائي، ويرسم التفاصيل التي يحتاجها المنفّذون، ويتابع العمل في الموقع.',
@@ -26,7 +25,6 @@ export const ui = {
     over: 'نظرة عامة', appr: 'منهج التصميم', scope: 'النطاق الفني', role2: 'الدور', facts: 'حقائق رئيسية', drw: 'الرسومات ولوحات العرض', imgs: 'الصور', zoomHint: 'اضغط على الصورة لتكبيرها. استخدم + / − للتقريب ومرّر للفحص.', open: 'عرض التفاصيل',
     expT: 'الخبرة', exp: [['+15','عاماً في التصميم المعماري والداخلي'],['صمّم','الفكرة والتصور ثلاثي الأبعاد وتوزيع الفراغات'],['خطّط','الرسومات الفنية والتنفيذية والتنسيق'],['نفّذ','التشطيب وضمان الجودة والإشراف على التنفيذ']],
     toolsT: 'البرامج', tools: 'أوتوكاد • ثري دي ماكس • أرشيكاد • لوميون • فوتوشوب',
-    partT: 'شركاء في التصميم والتطوير', partP: 'مهندسان يجمعان خبراتهما لتقديم خدمات تصميم وتطوير متكاملة.', p1: 'م. صابر مصطفى أحمد', p2: 'م. مواثق عربي', p2s: 'شريك في التصميم والتطوير',
     conT: 'لنتحدث عن مشروعك القادم.', conP: 'أخبرنا بما تريد بناءه أو تجديده وسنرد عليك بخطوات واضحة.', call: 'اتصال', mail: 'مراسلة', mailL: 'البريد الإلكتروني', wa: 'واتساب', uae: 'الإمارات', sudan: 'السودان', close: 'إغلاق', rights: 'جميع الحقوق محفوظة.',
     metaDesc: 'معرض أعمال احترافي في التصميم المعماري والداخلي: التصميم المعماري، التصميم الداخلي، الرسومات الفنية، التصور ثلاثي الأبعاد، التشطيب، تنسيق المشاريع والإشراف على التنفيذ.' }
 }

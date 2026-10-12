@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { projects, categories, services, heroSlides, TG, CONTACT as C } from './data.js'
 import { ui } from './i18n.js'
 
-const ids = ['home', 'about', 'services', 'projects', 'experience', 'partners', 'contact']
+const ids = ['home', 'about', 'services', 'projects', 'experience', 'contact']
 const wa = (n) => `https://wa.me/${n.replace('+', '')}`
 const byId = Object.fromEntries(projects.map((p) => [p.id, p]))
 const sm = (s) => s.replace('.webp', '-sm.webp')
@@ -91,14 +91,12 @@ export default function App() {
           <span className="ph"><img loading="lazy" src={sm(p.cover ? `./assets/img/${p.cover}.webp` : p.images[0])} alt={p.title[lang]} style={{ objectPosition: p.pos || '50% 50%' }} /></span>
           <span className="cap"><small>{t.cat[p.cat]}</small><b>{p.title[lang]}</b><em>{p.short[lang]}</em><i>{t.open} {t.arrow}</i></span></button>)}</div></div></section>
 
-      <section id="experience" className="sec dark"><div className="wrap"><p className="eyebrow rv">04</p><h2 className="rv">{t.expT}</h2>
+      <section id="experience" className="sec alt exp"><div className="wrap"><p className="eyebrow rv">04</p><h2 className="rv">{t.expT}</h2>
         <div className="steps">{t.exp.map(([a, b]) => <div key={a} className="rv"><b>{a}</b><span>{b}</span></div>)}</div>
         <p className="tools-l rv"><strong>{t.toolsT}:</strong> {t.tools}</p></div></section>
 
-      <section id="partners" className="sec"><div className="wrap"><p className="eyebrow rv">05</p><h2 className="rv">{t.partT}</h2><p className="big rv">{t.partP}</p>
-        <div className="partners rv"><div><b>{t.p1}</b><span>{t.role}</span></div><i aria-hidden="true">+</i><div><b>{t.p2}</b><span>{t.p2s}</span></div></div></div></section>
 
-      <section id="contact" className="sec dark contact"><FlowLines cls="lines bg" /><div className="wrap"><p className="eyebrow rv">06</p><h2 className="rv">{t.conT}</h2><p className="big rv">{t.conP}</p>
+      <section id="contact" className="sec dark contact"><FlowLines cls="lines bg" /><div className="wrap"><p className="eyebrow rv">05</p><h2 className="rv">{t.conT}</h2><p className="big rv">{t.conP}</p>
         <div className="cgrid rv"><div><small>{t.uae}</small><a href={`tel:${C.uae}`}>{C.uaeShow}</a><div className="btns"><a className="btn gold" href={wa(C.uae)} target="_blank" rel="noopener">{t.wa}</a><a className="btn" href={`tel:${C.uae}`}>{t.call}</a></div></div>
           <div><small>{t.sudan}</small><a href={`tel:${C.sudan}`}>{C.sudanShow}</a><div className="btns"><a className="btn gold" href={wa(C.sudan)} target="_blank" rel="noopener">{t.wa}</a><a className="btn" href={`tel:${C.sudan}`}>{t.call}</a></div></div>
           <div><small>{t.mailL}</small><a href={`mailto:${C.email}`}>{C.email}</a><div className="btns"><a className="btn gold" href={`mailto:${C.email}`}>{t.mail}</a></div></div></div></div></section>
